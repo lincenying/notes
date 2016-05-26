@@ -1,4 +1,4 @@
-# *** apply ***
+# apply
 
 apply是一个非常好用的函数，可以让我们给一个函数预绑定多个参数并生成一个可直接调用的新函数，简化代码。
 ```javascript
@@ -6,7 +6,7 @@ async.apply(t.inc, 3);
 // 等价于
 function(callback) { t.inc(3, callback); }
 ```
-```
+```javascript
 var t = {}
 t.inc = function(n, callback, timeout) {
     timeout = timeout || 200;
@@ -42,12 +42,12 @@ async.parallel([
 //1.1 results: [ 4, 100 ]
 ```
 
-# *** applyEach ***
+# applyEach
 
 applyEach，可以实现给一数组中每个函数传相同参数，通过callback返回。
 如果只传第一个参数，将返回一个函数对象
 
-```
+```javascript
 async.applyEach([
     function (name,cb) {
         setTimeout(function () {
@@ -69,11 +69,11 @@ async.applyEach([
 //07.080> 1.1 err: null
 ```
 
-# *** applyEachSeries ***
+# applyEachSeries
 
 applyEachSeries与applyEach唯一不同的是，数组的函数同步执行。
 
-```
+```javascript
 async.applyEachSeries([
     function (name,cb) {
         setTimeout(function () {
