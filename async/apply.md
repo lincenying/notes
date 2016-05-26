@@ -1,6 +1,6 @@
-[async.apply](#apply)
-[async.applyEach](#applyEach)
-[async.applyEachSeries](#applyEachSeries)
++   [async.apply](#apply)
++   [async.applyEach](#applyeach)
++   [async.applyEachSeries](#applyeachseries)
 
 
 # apply
