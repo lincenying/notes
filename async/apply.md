@@ -1,3 +1,8 @@
+[async.apply][#apply]
+[async.applyEach][#applyEach]
+[async.applyEachSeries][#applyEachSeries]
+
+
 # apply
 
 apply是一个非常好用的函数，可以让我们给一个函数预绑定多个参数并生成一个可直接调用的新函数，简化代码。
